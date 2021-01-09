@@ -1,5 +1,5 @@
 import type { Serverless } from "serverless/aws";
-const packageJson = require("./package.json");
+const packageJson = require("../package.json");
 
 const capitalize = (string: string) =>
   string.charAt(0).toUpperCase() + string.slice(1);

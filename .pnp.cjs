@@ -150,7 +150,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@package/ffmpeg-layer", "workspace:layers/ffmpeg"],
             ["@package/config", "workspace:config"],
             ["@types/node", "npm:14.14.20"],
-            ["@yarnpkg/pnpify", "virtual:fa25792cbda9ccf7df64208e79b844db77dac9ab4332edb47d0fd44e61c48036bee024f59c47b35420564c14698b40ca4551c5d0aa6662dde09254ef98a8e320#npm:2.4.0"]
+            ["@types/serverless", "npm:1.78.18"],
+            ["@yarnpkg/pnpify", "virtual:ae4e3a9abb9f1434b1733f15f2235da0f1c4b896ce6d12434df5de7eaf112752fd1e2c77d2b8082527456206c1a8b9c4b518ff5b0148eed9d922755c0f431379#npm:2.4.0"],
+            ["serverless", "npm:2.18.0"],
+            ["typescript", "patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=cc6730"]
           ],
           "linkType": "SOFT",
         }]
@@ -162,7 +165,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@package/puppeteer-layer", "workspace:layers/puppeteer"],
             ["@package/config", "workspace:config"],
             ["@types/node", "npm:14.14.20"],
-            ["@yarnpkg/pnpify", "virtual:fa25792cbda9ccf7df64208e79b844db77dac9ab4332edb47d0fd44e61c48036bee024f59c47b35420564c14698b40ca4551c5d0aa6662dde09254ef98a8e320#npm:2.4.0"]
+            ["@types/serverless", "npm:1.78.18"],
+            ["@yarnpkg/pnpify", "virtual:ae4e3a9abb9f1434b1733f15f2235da0f1c4b896ce6d12434df5de7eaf112752fd1e2c77d2b8082527456206c1a8b9c4b518ff5b0148eed9d922755c0f431379#npm:2.4.0"],
+            ["serverless", "npm:2.18.0"],
+            ["typescript", "patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=cc6730"]
           ],
           "linkType": "SOFT",
         }]
@@ -841,31 +847,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lodash", "npm:4.17.20"],
             ["tslib", "npm:1.14.1"],
             ["typescript", "patch:typescript@npm%3A4.1.3#builtin<compat/typescript>::version=4.1.3&hash=cc6730"]
-          ],
-          "packagePeers": [
-            "@types/eslint",
-            "@types/typescript",
-            "eslint",
-            "typescript"
-          ],
-          "linkType": "HARD",
-        }],
-        ["virtual:fa25792cbda9ccf7df64208e79b844db77dac9ab4332edb47d0fd44e61c48036bee024f59c47b35420564c14698b40ca4551c5d0aa6662dde09254ef98a8e320#npm:2.4.0", {
-          "packageLocation": "./.yarn/$$virtual/@yarnpkg-pnpify-virtual-2d50b74f78/0/cache/@yarnpkg-pnpify-npm-2.4.0-f9312c18ed-89bbbe7f62.zip/node_modules/@yarnpkg/pnpify/",
-          "packageDependencies": [
-            ["@yarnpkg/pnpify", "virtual:fa25792cbda9ccf7df64208e79b844db77dac9ab4332edb47d0fd44e61c48036bee024f59c47b35420564c14698b40ca4551c5d0aa6662dde09254ef98a8e320#npm:2.4.0"],
-            ["@types/eslint", null],
-            ["@types/typescript", null],
-            ["@yarnpkg/core", "npm:2.4.0"],
-            ["@yarnpkg/fslib", "npm:2.4.0"],
-            ["@yarnpkg/parsers", "npm:2.3.0"],
-            ["chalk", "npm:3.0.0"],
-            ["clipanion", "npm:2.6.2"],
-            ["comment-json", "npm:2.4.2"],
-            ["eslint", null],
-            ["lodash", "npm:4.17.20"],
-            ["tslib", "npm:1.14.1"],
-            ["typescript", null]
           ],
           "packagePeers": [
             "@types/eslint",

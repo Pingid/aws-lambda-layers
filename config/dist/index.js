@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var packageJson = require("./package.json");
+var packageJson = require("../package.json");
 var capitalize = function (string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 };
