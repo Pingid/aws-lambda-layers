@@ -16,15 +16,14 @@ export default ({
   service: `${name}-layer`,
   frameworkVersion: packageJson.devDependencies.serverless,
   custom: {
-    region: "${opt:stage, 'eu-west-2'}",
     output: {
       file: `../../${name}-stack.json`,
     },
   },
   provider: {
     name: "aws",
-    region: "${self:custom.region}",
-    stage: "${opt:stage, 'dev'}",
+    region,
+    stage,
   },
   layers: {
     [name]: {
@@ -35,7 +34,7 @@ export default ({
   resources: {
     Resources: {},
     Outputs: {
-      FfmpegLayerExport: {
+      [`${capitalize(name)}LayerExport`]: {
         Value: {
           Ref: `${capitalize(name)}LambdaLayer`,
         },
