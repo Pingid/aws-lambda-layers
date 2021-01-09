@@ -1,0 +1,16 @@
+{
+  "name": "@package/ffmpeg-layer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "sh ./build.sh",
+    "deploy": "pnpify sls deploy",
+    "sls": "pnpify sls"
+  },
+  "devDependencies": {
+    "@package/config": "1.0.0",
+    "@types/node": "^14.14.20",
+    "@yarnpkg/pnpify": "^2.4.0"
+  }
+}

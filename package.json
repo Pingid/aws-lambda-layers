@@ -1,0 +1,19 @@
+{
+  "name": "aws-lambda-layers",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "config",
+    "layers/*"
+  ],
+  "scripts": {
+    "build": "yarn workspaces foreach -tpvi run build",
+    "deploy": "yarn workspaces foreach -pvi run deploy"
+  },
+  "devDependencies": {
+    "@yarnpkg/pnpify": "^2.4.0",
+    "typescript": "^4.1.3"
+  }
+}

@@ -1,0 +1,4 @@
+node_modules
+chrome-aws-lambda
+layer
+.serverless

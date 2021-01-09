@@ -1,0 +1,6 @@
+ffmpeg-stack.json
+puppeteer-stack.json
+.yarn/cache
+.yarn/unplugged
+.pnp.js
+.DS_Store
